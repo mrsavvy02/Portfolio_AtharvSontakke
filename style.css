@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+:root {
+  --main-color: #f8b281;
+  --secondary-color: #1b1b1b;
+}
+
+section {
+  padding: 5%;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 125%;
+  padding: 1rem 0rem;
+  color: #0a100d;
+  font-family: 'Boogaloo', cursive;
+}
+
+h3 {
+  font-size: 2.2rem;
+  line-height: 125%;
+  font-family: 'Boogaloo', cursive;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav svg {
+  cursor: pointer;
+  z-index: 10;
+}
+
+.links {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: translateX(100%);
+}
+
+.links a {
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+  font-family: 'Boogaloo', cursive;
+}
+
+.front-page {
+  min-height: 100vh;
+  color: white;
+}
+
+.home {
+  margin-top: 25vh;
+  text-align: center;
+}
+
+.home h3 {
+  font-family: 'Boogaloo', cursive;
+  color: #0a100d;
+}
+
+.resume {
+  margin-top: 2rem;
+}
+
+.resume button {
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.216);
+  margin: 1rem;
+}
+
+.resume-main {
+  font-family: 'Boogaloo', cursive;
+  color: var(--secondary-color);
+}
+
+.resume-main a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.hero {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.about {
+  text-align: justify;
+  color: var(--secondary-color);
+}
+
+.about h2 {
+  font-family: 'Boogaloo', cursive;
+  text-align: center !important;
+  padding: 20px;
+}
+
+.about p {
+  font-family: 'Boogaloo', cursive;
+  line-height: 150%;
+  font-size: 1.5rem;
+  color: #6c757d;
+  letter-spacing: 0.5px;
+}
+
+.about-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+@media (max-width: 600px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.projects {
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: 'Boogaloo', cursive;
+}
+
+.card{
+  background-image: linear-gradient(to right top, #000000, #141312, #201e1d, #2c2b28, #373834);
+  text-align: left;
+  border-radius: 20px;
+}
+.card button{
+  font-size: 20px;
+  font-family: 'Boogaloo', cursive;
+  border: 2px solid #6c757d !important;
+  padding: 3px;
+  color: #ccc !important;
+  background-color: transparent !important;
+}
+
+.img{
+  border-radius: 50% 50% 50% 50% / 65% 45% 55% 35% !important;
+}
+
+.project {
+  padding: 10px;
+  margin: 10px;
+}
+
+.project button {
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  margin: 1rem;
+  background-image: linear-gradient(to right top, #000000, #141312, #201e1d, #2c2b28, #373834);
+}
+
+.project-main {
+  font-family: 'Boogaloo', cursive;
+  color: var(--secondary-color);
+}
+
+.project-main a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #ccc;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0% 10%;
+  }
+  .videos {
+    display: flex;
+    gap: 2rem;
+  }
+  .about {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+  }
+
+  .about h2 {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .videos {
+    gap: 5rem;
+  }
+  .about {
+    gap: 10rem;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  gap: 10px;
+}
+
+.card {
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card button {
+  color:black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+footer {
+  background-color: #ccc;
+  padding: 20px;
+}
+
+.social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.social-media li i {
+  font-size: 20px;
+}
