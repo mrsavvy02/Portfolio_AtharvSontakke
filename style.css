@@ -149,6 +149,13 @@ nav svg {
   .about-container {
     grid-template-columns: 1fr;
   }
+  .about p{
+    font-size: 1.2rem;
+  }
+  .about img{
+    width: 100%;
+    height: auto;
+  }
 }
 
 .projects {
