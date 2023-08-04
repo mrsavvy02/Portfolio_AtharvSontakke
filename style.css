@@ -15,7 +15,7 @@ html {
 }
 
 section {
-  padding: 5%;
+  padding: 3%;
 }
 
 h2 {
@@ -122,8 +122,12 @@ nav svg {
 }
 
 .about {
+  width: auto;
+  height: auto;
   text-align: justify;
   color: var(--secondary-color);
+  border-bottom: 2px solid #2b2d42;
+  
 }
 
 .about h2 {
@@ -145,6 +149,7 @@ nav svg {
   grid-template-columns: 1fr 1fr;
 
 }
+
 @media (max-width: 600px) {
   .about-container {
     grid-template-columns: 1fr;
@@ -169,6 +174,7 @@ nav svg {
   text-align: left;
   border-radius: 20px;
 }
+
 .card button{
   font-size: 20px;
   font-family: 'Boogaloo', cursive;
@@ -211,10 +217,7 @@ nav svg {
   body {
     padding: 0% 10%;
   }
-  .videos {
-    display: flex;
-    gap: 2rem;
-  }
+
   .about {
     display: flex;
     gap: 5rem;
@@ -227,9 +230,6 @@ nav svg {
 }
 
 @media screen and (min-width: 1024px) {
-  .videos {
-    gap: 5rem;
-  }
   .about {
     gap: 10rem;
   }
@@ -239,7 +239,7 @@ nav svg {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 10px;
-  gap: 10px;
+  gap: 40px;
 }
 
 .card {
@@ -253,19 +253,35 @@ nav svg {
 
 .card button {
   color:black;
-  padding: 10px;
+  padding: 5px;
   border: none;
   cursor: pointer;
 }
+
 @media (max-width: 600px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
+
 footer {
-  background-color: #ccc;
+  color: #000;
   padding: 20px;
+  text-align: center;
+  border-top: 2px solid #2b2d42;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+
+}
+
+.container p{
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
 }
 
 .social-media {
@@ -279,11 +295,6 @@ footer {
   margin-right: 10px;
 }
 
-.social-media li a {
-  color: #000;
-  text-decoration: none;
-}
-
-.social-media li i {
-  font-size: 20px;
+.social-media i {
+  font-size: 30px;
 }
